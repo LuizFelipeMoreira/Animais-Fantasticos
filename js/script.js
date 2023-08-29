@@ -10,7 +10,14 @@ import initFuncionamento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitCoin from "./modules/fetch-bitcoin.js";
 
-InitScrollSuave();
+const options = {
+  behavior: "smooth",
+  block: "start",
+};
+
+const scrollSuave = new InitScrollSuave('.js-menu a[href^="#"]', options);
+scrollSuave.init();
+
 animarScroll();
 initTabNav();
 Accordion();
