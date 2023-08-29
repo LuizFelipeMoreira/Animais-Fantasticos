@@ -18,9 +18,13 @@ scrollSuave.init();
 
 const accodion = new Accordion(".faq dt");
 accodion.init();
+const tabNav = new initTabNav(
+  "[data-tab='menu'] li",
+  "[data-tab='content'] section"
+);
+tabNav.init();
 
 animarScroll();
-initTabNav();
 initModal();
 initTooltip();
 initDropDownMenu();
