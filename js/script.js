@@ -10,17 +10,17 @@ import initFuncionamento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitCoin from "./modules/fetch-bitcoin.js";
 
-const options = {
+const scrollSuave = new InitScrollSuave('.js-menu a[href^="#"]', {
   behavior: "smooth",
   block: "start",
-};
-
-const scrollSuave = new InitScrollSuave('.js-menu a[href^="#"]', options);
+});
 scrollSuave.init();
+
+const accodion = new Accordion(".faq dt");
+accodion.init();
 
 animarScroll();
 initTabNav();
-Accordion();
 initModal();
 initTooltip();
 initDropDownMenu();
