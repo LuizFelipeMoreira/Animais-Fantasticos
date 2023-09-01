@@ -8,7 +8,6 @@ export default class ScrollAnima {
   }
 
   getDistance() {
-    console.log("eu");
     this.distance = [...this.sections].map((section) => {
       const topo = section.offsetTop;
 
