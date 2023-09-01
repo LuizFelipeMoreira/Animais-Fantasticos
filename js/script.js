@@ -51,4 +51,5 @@ const funcionamento = new Funcionamento("[data-semana]");
 funcionamento.init();
 
 fetchAnimais("../../animaisAPI.json", ".numeros-grid");
+
 fetchBitCoin("https://blockchain.info/ticker", ".btc-preco");
